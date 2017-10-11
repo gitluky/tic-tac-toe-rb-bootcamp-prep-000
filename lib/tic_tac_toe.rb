@@ -80,7 +80,6 @@ end
 
 # Define your play method below
 def play(board)
-  puts "Welcome to Tic Tac Toe!"
   until over?(board)
     turn(board)
   end
