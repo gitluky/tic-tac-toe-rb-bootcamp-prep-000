@@ -84,8 +84,12 @@ end
 
 # Define your play method below
 def play(board)
-  until won?(board)
+  until over?(board)
     turn(board)
   end
+  if won?(board)
+    puts ("Congrats on winning, Player #{winner}")
+  else
+    puts ("It's a draw!")
+  end
 end
-
