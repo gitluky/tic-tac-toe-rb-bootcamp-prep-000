@@ -80,6 +80,7 @@ end
 
 # Define your play method below
 def play(board)
+  display(board)
   until over?(board)
     turn(board)
   end
